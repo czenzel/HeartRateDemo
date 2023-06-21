@@ -30,4 +30,4 @@ jobs:
       
     - name: Build for Android
       working-directory: project
-      run: dotnet publish -f net7.0-android -c Debug
+      run: dotnet publish -f net7.0-android33.0 -c Debug
