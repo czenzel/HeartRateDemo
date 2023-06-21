@@ -1,19 +1,19 @@
-﻿using HeartRateDemo.Models;
-using HeartRateDemo.Services;
+﻿using HeartRateDemo.Interfaces;
+using HeartRateDemo.Models;
 using SystemTimer = System.Timers.Timer;
 
 namespace HeartRateDemo;
 
 public partial class MainPage : ContentPage
 {
-    private readonly HeartRateMonitorScanner _heartRateMonitorScanner;
-    private readonly HeartRateMonitorClient _heartRateMonitorClient;
+    private readonly IHeartRateMonitorScanner _heartRateMonitorScanner;
+    private readonly IHeartRateMonitorClient _heartRateMonitorClient;
 
     private bool _alreadyLoaded = false;
     private SystemTimer _sensorDiscoveryWatchdog;
 
-    public MainPage(HeartRateMonitorScanner heartRateMonitorScanner,
-        HeartRateMonitorClient heartRateMonitorClient)
+    public MainPage(IHeartRateMonitorScanner heartRateMonitorScanner,
+        IHeartRateMonitorClient heartRateMonitorClient)
     {
         _heartRateMonitorScanner = heartRateMonitorScanner;
         _heartRateMonitorClient = heartRateMonitorClient;

@@ -27,7 +27,15 @@ jobs:
     - name: Restore Dependencies
       working-directory: project
       run: dotnet restore
+    
+    - name: Build Unit Tests
+      working-directory: project/HeartRateDemo.Tests
+      run: dotnet build -c Debug
+    
+    - name: Perform Unit Testing
+      working-directory: project/HeartRateDemo.Tests
+      run: dotnet test
       
     - name: Build for Android
-      working-directory: project
+      working-directory: project/HeartRateDemo
       run: dotnet publish -f net7.0-android33.0 -c Debug

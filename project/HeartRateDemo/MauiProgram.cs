@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using HeartRateDemo.Services;
+using HeartRateDemo.Interfaces;
 using Shiny.Infrastructure;
 
 namespace HeartRateDemo;
@@ -18,7 +19,8 @@ public static class MauiProgram
 			});
 
 		builder.Services.UseShiny();
-		builder.Services.AddLocal();
+		builder.Services.UseHeartRateMonitor();
+		builder.Services.UseViews();
 
 #if DEBUG
 		builder.Logging.AddDebug();
@@ -33,10 +35,14 @@ public static class MauiProgram
 		services.AddBluetoothLE();
 	}
 
-	private static void AddLocal(this IServiceCollection services)
+	private static void UseHeartRateMonitor(this IServiceCollection services)
 	{
-		services.AddSingleton(typeof(HeartRateMonitorScanner));
-		services.AddSingleton(typeof(HeartRateMonitorClient));
-		services.AddTransient<MainPage>();
+		services.AddSingleton<IHeartRateMonitorScanner, HeartRateMonitorScanner>();
+		services.AddSingleton<IHeartRateMonitorClient, HeartRateMonitorClient>();
 	}
+
+	private static void UseViews(this IServiceCollection services)
+	{
+        services.AddTransient<MainPage>();
+    }
 }

@@ -51,4 +51,6 @@
 		<PackageReference Include="Shiny.BluetoothLE" Version="3.0.0-beta-0154" />
 	</ItemGroup>
 
+	<Import Project="..\HeartRateDemo.Shared\HeartRateDemo.Shared.projitems" Label="Shared" />
+
 </Project>

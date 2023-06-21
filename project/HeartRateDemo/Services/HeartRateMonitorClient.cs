@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using HeartRateDemo.Constants;
 using HeartRateDemo.Extensions;
+using HeartRateDemo.Interfaces;
 
 namespace HeartRateDemo.Services
 {
-    public class HeartRateMonitorClient
+    public class HeartRateMonitorClient : IHeartRateMonitorClient
     {
         private readonly IBleManager _bleManager;
 

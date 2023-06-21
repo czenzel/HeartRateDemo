@@ -1,4 +1,5 @@
 ﻿using HeartRateDemo.Constants;
+using HeartRateDemo.Interfaces;
 using HeartRateDemo.Models;
 using Shiny.BluetoothLE;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace HeartRateDemo.Services
 {
-    public class HeartRateMonitorScanner
+    public class HeartRateMonitorScanner : IHeartRateMonitorScanner
     {
         private readonly IBleManager _bleManager;
         private readonly ObservableList<HeartRateSensor> _sensors = new ObservableList<HeartRateSensor>();
