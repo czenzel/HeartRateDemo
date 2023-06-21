@@ -37,5 +37,5 @@ jobs:
       run: dotnet test
       
     - name: Build for Android
-      working-directory: project
+      working-directory: project/HeartRateDemo
       run: dotnet publish -f net7.0-android -c Debug
