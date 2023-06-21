@@ -1,5 +1,7 @@
 # Heart Rate Monitor and Microsoft .NET MAUI Demonstration Project
 
+[Demonstration Video](images/demo.gif)
+
 ## Author
 
 Created by Christopher Zenzel
