@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using HeartRateDemo.Services;
-using Shiny.Infrastructure;
 using HeartRateDemo.Interfaces;
+using Shiny.Infrastructure;
 
 namespace HeartRateDemo;
 

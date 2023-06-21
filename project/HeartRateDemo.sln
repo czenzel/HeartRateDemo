@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeartRateDemo", "HeartRateDemo\HeartRateDemo.csproj", "{0AF8E39C-D94C-434A-AD75-25530FA23EFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeartRateDemo.Tests", "HeartRateDemo.Tests\HeartRateDemo.Tests.csproj", "{E605FC8E-3657-4DB7-B9D7-15DF87CEBE91}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "HeartRateDemo.Shared", "HeartRateDemo.Shared\HeartRateDemo.Shared.shproj", "{A78CECCC-BA7D-4494-AAA9-6543B8DA88D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,20 @@ Global
 		{0AF8E39C-D94C-434A-AD75-25530FA23EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AF8E39C-D94C-434A-AD75-25530FA23EFC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0AF8E39C-D94C-434A-AD75-25530FA23EFC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E605FC8E-3657-4DB7-B9D7-15DF87CEBE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E605FC8E-3657-4DB7-B9D7-15DF87CEBE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E605FC8E-3657-4DB7-B9D7-15DF87CEBE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E605FC8E-3657-4DB7-B9D7-15DF87CEBE91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		HeartRateDemo.Shared\HeartRateDemo.Shared.projitems*{0af8e39c-d94c-434a-ad75-25530fa23efc}*SharedItemsImports = 5
+		HeartRateDemo.Shared\HeartRateDemo.Shared.projitems*{a78ceccc-ba7d-4494-aaa9-6543b8da88d0}*SharedItemsImports = 13
+		HeartRateDemo.Shared\HeartRateDemo.Shared.projitems*{e605fc8e-3657-4db7-b9d7-15df87cebe91}*SharedItemsImports = 5
 	EndGlobalSection
 EndGlobal
