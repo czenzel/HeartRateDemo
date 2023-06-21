@@ -2,6 +2,10 @@
 
 ![Demonstration Video](images/demo.gif)
 
+## Build Status
+
+[![HeartRateDemo Android Build](https://github.com/czenzel/HeartRateDemo/actions/workflows/android-build.yml/badge.svg)](https://github.com/czenzel/HeartRateDemo/actions/workflows/android-build.yml)
+
 ## Author
 
 Created by Christopher Zenzel
